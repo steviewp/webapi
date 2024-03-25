@@ -4,31 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- main outer div -- >
     <div>class="outer-container"
         
         <!- top bar section -->
-        <div>
+        <header>
             <button>View Highscores</button>
             <p>Timer: 00:00</p>
-        </div>
+        </header>
 
         <!--inner div -->
-        <div>
+        <main>
 
             <!-- main header/quiz intro -->
-            <header>
-
-            </header>
+            <section id="intro-section" >
+                <h1>Coding Quiz Challenge</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis adipisci exercitationem rem nemo quo culpa ab voluptates sed ea earum voluptatem optio dignissimos asperiores iusto molestias beatae expedita, neque officia!</p>
+                <button id="start-btn">Start Quiz</button>
+            </section>
            
             <!-- main quiz content -->   
-            <main>
+            <section id ="quiz-section" class="hide">
+                <h2 id="text">Your question here!</h2>
+                <div>
+                    <button id="choice-1">Option 1</button>
+                    <button id="choice-2">Option 2</button>
+                    <button id="choice-3">Option 3</button>
+                    <button id="choice-4">Option 4</button>
+                </div>
+                <p>Correct/Wrong!</p>
+            </section>
 
-            </main>
+            <!-- end content -->   
+            <section>
 
-        </div>
+            </section>
+
+            <!-- high scores content -->   
+            <section>
+
+            </section>
+
+        </main>
     </div>
+    <script src="questions.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
